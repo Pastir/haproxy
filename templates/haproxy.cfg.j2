@@ -1,0 +1,17 @@
+{{ ansible_managed }}
+{% for it in merged_haproxy_conf %}
+
+{% for key, val in it.items() %}
+{% if key == "section" %}
+{{ val }}
+{% elif not val %}
+   {{ key }}
+{% elif val is iterable and val is not string %}
+{% for v in val %}
+   {{ key }} {{ v }}
+{% endfor %}
+{% else %}
+   {{ key }} {{ val }}
+{% endif %}
+{% endfor %}
+{% endfor %}

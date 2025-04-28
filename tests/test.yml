@@ -1,0 +1,6 @@
+- name: Test HAProxy Role
+  hosts: localhost
+  remote_user: root
+
+  roles:
+    - pastir.haproxy

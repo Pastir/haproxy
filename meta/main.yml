@@ -1,0 +1,24 @@
+galaxy_info:
+  author: Pastir Ivan
+  description: Install && configuration Haproxy The Reliable, High Performance TCP/HTTP Load Balancer"
+  role_name: haproxy
+
+  license: Apache License, Version 2.0
+
+  min_ansible_version: '2.9'
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+        - noble
+
+  galaxy_tags:
+    - reliable
+    - highperformance
+    - tcploadbalancer
+    - httploadbalancer
+    - haproxy
+
+dependencies: []
