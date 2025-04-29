@@ -1,0 +1,26 @@
+---
+dependency:
+  name: galaxy
+  options:
+    requirements-file: requirements.yml
+
+driver:
+  name: docker
+
+platforms:
+  - name: ubuntu-focal
+    image: geerlingguy/docker-ubuntu2004-ansible:latest
+    pre_build_image: true
+
+  - name: ubuntu-jammy
+    image: geerlingguy/docker-ubuntu2204-ansible:latest
+    pre_build_image: true
+
+provisioner:
+  name: ansible
+  lint: |
+    ansible-lint
+    yamllint .
+
+verifier:
+  name: ansible
