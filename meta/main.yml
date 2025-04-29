@@ -2,7 +2,7 @@
 galaxy_info:
   author: Pastir Ivan
   description: "Install and configure HAProxy — The Reliable, High-Performance TCP/HTTP Load Balancer"
-  role_name: pastir.haproxy
+  role_name: haproxy
 
   license: MIT
 
