@@ -1,7 +1,8 @@
+---
 - name: Block configure
+  tags: configure
   block:
     - name: Initialize merged_haproxy_conf
-      tags: configure
       ansible.builtin.set_fact:
         merged_haproxy_conf: "{{ __haproxy_config }}"
 

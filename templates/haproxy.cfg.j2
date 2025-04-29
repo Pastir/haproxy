@@ -1,4 +1,4 @@
-{{ ansible_managed }}
+# {{ ansible_managed | comment(decoration='# ')}}
 {% for it in merged_haproxy_conf %}
 
 {% for key, val in it.items() %}

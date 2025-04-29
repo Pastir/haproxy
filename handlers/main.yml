@@ -1,3 +1,4 @@
+---
 - name: (Handler - HAProxy Config) Validate haproxy.cfg syntax
   ansible.builtin.command:
     cmd: haproxy -c -f "{{ haproxy_cfg_file | default(__haproxy_cfg_file) }}"
