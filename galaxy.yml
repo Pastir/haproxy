@@ -1,0 +1,18 @@
+---
+namespace: pastir
+name: haproxy
+version: 1.0.0
+readme: README.md
+authors:
+  - Pastir Ivan
+description: Install and configure HAProxy — The Reliable, High-Performance TCP/HTTP Load Balancer.
+license: MIT
+tags:
+  - haproxy
+  - tcp
+  - http
+  - loadbalancer
+  - linux
+repository: https://github.com/pastir/haproxy
+documentation: https://github.com/pastir/haproxy
+issues: https://github.com/pastir/haproxy/issues
